@@ -10,7 +10,7 @@ Changes compared to the original joomlaempressa.es version:
 - compared against core weight_countries of VM3.2.5
 - added category filter per the core plugin
 - added new tax hangling for the calculation: before tax / after tax / product subtotal before tax / product subtotal after tax
-- added it's own template for display in the cart in /plugins/vmshipment/weight_countries_percentage/tmpl/default_cart.php which can be used in your template overrides as /templates/YOUR TEMPLATE/html/weight_countries_percentage/default_cart.php
+- added it's own template for display in the cart in /plugins/vmshipment/weight_countries_percent/tmpl/default_cart.php which can be used in your template overrides as /templates/YOUR TEMPLATE/html/weight_countries_percent/default_cart.php
 - better handling of the order data fetching from the database
 
 stAn
