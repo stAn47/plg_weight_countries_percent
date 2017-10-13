@@ -2,11 +2,11 @@
 <extension version="2.5" type="plugin" group="vmshipment" method="upgrade">
 	<name>By weight, ZIP and countries Percentage</name>
 	<creationDate>02-2015</creationDate>
-	<author>The VirtueMart Development Team and Joomla Empresa Development Team</author>
+	<author>joomlaempresa.es, Virtuemart, RuposTel.com</author>
 	<authorUrl>http://www.joomlaempresa.es/en</authorUrl>
-	<copyright>Copyright (C) 2004-2015 Virtuemart Team and Joomla Empresa Team. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2004-2015 Virtuemart Team and Joomla Empresa Team, RuposTel.com. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>3.0.4</version>
+	<version>3.2.5</version>
 	<description>VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT</description>
 	<files>
 		<filename plugin="weight_countries_percent">weight_countries_percent.php</filename>
