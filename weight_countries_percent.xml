@@ -2,11 +2,11 @@
 <extension version="2.5" type="plugin" group="vmshipment" method="upgrade">
 	<name>By weight, ZIP and countries Percentage</name>
 	<creationDate>02-2015</creationDate>
-	<author>joomlaempresa.es, Virtuemart, RuposTel.com</author>
+	<author>The VirtueMart Development Team and Joomla Empresa Development Team</author>
 	<authorUrl>http://www.joomlaempresa.es/en</authorUrl>
-	<copyright>Copyright (C) 2004-2015 Virtuemart Team and Joomla Empresa Team, RuposTel.com. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2004-2015 Virtuemart Team and Joomla Empresa Team. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>3.2.5</version>
+	<version>3.0.4</version>
 	<description>VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT</description>
 	<files>
 		<filename plugin="weight_countries_percent">weight_countries_percent.php</filename>
@@ -37,9 +37,21 @@
 				<field name="nbproducts_stop" type="text" size="10" default="" label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_NBPRODUCTS_STOP" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_NBPRODUCTS_STOP_DESC"/>
 				<field name="orderamount_start" type="text" size="10" default="" label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_ORDERAMOUNT_START" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_ORDERAMOUNT_START_DESC"/>
 				<field name="orderamount_stop" type="text" size="10" default="" label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_ORDERAMOUNT_STOP" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_ORDERAMOUNT_STOP_DESC"/>
+				
+				<field name="categories" value_field="category_name" type="vmcategories" multiple="true" size="10" default="" label="VMSHIPMENT_WEIGHT_CATEGORIES"
+                       description="VMSHIPMENT_WEIGHT_CATEGORIES_DESC"/>
+                <field name="blocking_categories" value_field="category_name" type="vmcategories" multiple="true" size="10" default="" label="VMSHIPMENT_WEIGHT_BLOCKING_CATEGORIES"
+                       description="VMSHIPMENT_WEIGHT_CATEGORIES_DESC"/>
+				
 			</fieldset>
 			<fieldset name="fee">
 				<field name="shipment_cost" type="text"   label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_COST" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_COST_DESC" default="0" />
+				<field name="tax_handling" type="list"   label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX_DESC" default="0" >
+				 <option value="0">VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX_AFTER</option>
+				 <option value="1">VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX_BEFORE</option>
+				 <option value="2">VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX_SUBTOTALAFTER</option>
+				 <option value="3">VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_BEFORETAX_SUBTOTALBEFORE</option>
+				</field>
 				<field name="package_fee" type="text"   label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_PACKAGE_FEE" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_PACKAGE_FEE_DESC" />
 				<field name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_TAX" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_TAX_DESC" default="0" />
 				<field name="free_shipment" type="text"    label="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_FREE_SHIPPING_AMOUNT" description="VMSHIPMENT_WEIGHT_COUNTRIES_PERCENT_FREE_SHIPPING_AMOUNT_DESC" default="" />
